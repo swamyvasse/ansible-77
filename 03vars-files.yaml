@@ -1,7 +1,7 @@
 - name: printed varibles
   hosts: localhost
   vars_files:
-  - varibles.yaml
+  - E:\devops\repos\ansible-77\varibles.yaml
   tasks:
    - name: printed varibles
      ansible.builtin.debug:
