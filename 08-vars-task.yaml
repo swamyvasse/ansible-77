@@ -1,0 +1,15 @@
+- name: printed varibles from task level
+  hosts: localhost
+  vars:
+   money: 100000rs
+   time: 6pm
+   barrow: swamy
+  tasks:
+  - name: printed varibles from inhertence
+    ansible.builtin.debug:
+     msg: "MONEY is {{money}} and TIME is {{time}} and person is {{barrow}}"
+  - name: printed varibles from inheritance and add overwrite
+    vars:
+    house: swamy
+    ansible.builtin.debug:
+     msg: "MONEY is {{money}} and TIME is {{time}} and person is {{barrow}} and HOUSE is {{house}}"
