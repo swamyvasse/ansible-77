@@ -5,7 +5,7 @@
    TRAINER: swamy
    DURATION: 110hrs
   tasks:
-  - name: print the course
+  - name: printed msg
     ansible.builtin.debug:
-    content: "i am learning {{COURSE}} course and trainer is {{TRAINER}} it will take duration {{DURATION}}"
+     msg: "i am learning {{COURSE}} course and trainer is {{TRAINER}} it will take duration {{DURATION}}"
 
