@@ -1,0 +1,8 @@
+- name: varibles printed from files
+  hosts: localhost
+  vars_files:
+   varibles.yaml
+  tasks:
+   - name: printed files level
+     ansible.builtin.debug:
+      msg: "i am watching {{MOVIE}} movie and price is {{PRICE}} the show time {{TIME}}"
