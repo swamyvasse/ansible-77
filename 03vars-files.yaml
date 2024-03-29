@@ -1,8 +1,0 @@
-- name: printed varibles
-  hosts: localhost
-  vars_files:
-  - E:\devops\repos\ansible-77\varibles.yaml
-  tasks:
-   - name: printed varibles
-     ansible.builtin.debug:
-      msg: "i am learning course is {{NAME}}, trainer is {{TRAINER}}, duration is {{DURATION}}"
