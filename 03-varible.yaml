@@ -1,0 +1,10 @@
+- name: printed message
+  hosts: mongodb
+  vars:
+    MOVIE: pushpa2
+    AUDIAN: swamy
+    WATCH: watching
+  tasks:
+   - name: printed msg
+     ansible.builtin.debug:
+      msg: "{{AUDIAN}} is {{WATCH}} {{MOVIE}} movie"
