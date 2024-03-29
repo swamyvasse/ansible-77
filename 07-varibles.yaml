@@ -1,5 +1,5 @@
 - name: varibles from prompt level
-  hosts: locahost
+  hosts: localhost
   vars_prompt:
   - name: USERNAME
     prompt: please enter username
