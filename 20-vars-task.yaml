@@ -12,5 +12,5 @@
     vars:
      HOUSE: own
     ansible.builtin.debug:
-     msg: " iam learning course is {{COURSE}} and trainer is {{TRAINER}} and duration is {{DURATION}} and i have {{}} house"
+     msg: " iam learning course is {{COURSE}} and trainer is {{TRAINER}} and duration is {{DURATION}} and i have {{HOUSE}} house"
        
