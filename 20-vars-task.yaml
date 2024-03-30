@@ -8,9 +8,8 @@
   - name: printed varibles from task level
     ansible.builtin.debug:
      msg: "i am learning course is {{COURSE}} trainer is {{TRAINER}} duration is {{DURATION}}"
-  vars:
-   HOUSE: swamy
-   tasks:
    - name: printed varibles and add overwrite file
+  vars:
+   HOUSE: own
      ansible.builtin.debug:
       msg: "i am learning course is {{COURSE}} trainer is {{TRAINER}} duration is {{DURATION}} house is {{HOUSE}}"
