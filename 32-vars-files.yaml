@@ -1,0 +1,7 @@
+- name: printed varibles from files level
+  hosts: mongodb
+  vars_files:
+  tasks:
+  - name: printed varibles from files level
+    ansible.builtin.debug:
+     msg: "college is sunday {{SUNDAY}} and watch movie {{MOVIE}} time at {{TIME}}"
