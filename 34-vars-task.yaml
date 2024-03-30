@@ -11,5 +11,5 @@
   - name: printed and add over write files
     vars:
      HOUSE: own
-     ansible.builtin.debug:
+    ansible.builtin.debug:
       msg: "i am learning course is {{COURSE}} trainer is {{TRAINER}} duration is {{DURATION}} and i have {{HOUSE}} house"
