@@ -8,3 +8,6 @@
   - name: checking user is exist or not
     ansible.builtin.debug:
      msg: "user is {{output}}"
+  - name: print output rc
+    ansible.builtin.debug:
+     msg: "{{output.rc}}"
