@@ -9,9 +9,9 @@
     prompt: please enter trainer
     private: false
   tasks:
+  - name: print the varibles
   vars:
    NAME: swamy
-  - name: print the varibles
   tasks:
   - name: testing the precedence varibles
     ansible.builtin.debug:
