@@ -3,4 +3,4 @@
   tasks:
   - name: printed varibles from command level
     ansible.builtin.debug:
-     msg: "i am learning course is {{COURSE}} devops"
+     msg: "i am learning course is {{COURSE}}"
