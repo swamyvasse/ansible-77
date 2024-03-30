@@ -1,15 +1,15 @@
 - name: testing the different data types
   hosts: mongodb
   vars:
-   AGE: 30
-   NAME: "swamy"
-   ISDEVOPS: true
-   SKILLS:
+  - AGE: 30
+  - NAME: "swamy"
+  - ISDEVOPS: true
+  - SKILLS:
      devops
      aws
      linux
      docker
-   EXPERIENCE:
+  - EXPERIENCE:
      devops: 3
      aws: 5
      docker: 7
