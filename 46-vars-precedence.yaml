@@ -10,6 +10,7 @@
     private: false
   tasks:
   - name: print the varibles
+  ansible.builtin.debug:
   vars:
    NAME: swamy-task
    msg: "what is trainer name {{NAME}}"
