@@ -2,4 +2,4 @@
 roboshop-us-dev-db-mongodb01.swamy.cloud
 
 [mongodb:vars]
-NAME=swamy
+NAME=swamy-inventory

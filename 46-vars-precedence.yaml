@@ -1,18 +1,17 @@
 - name: testing the varible precedence
   hosts: mongodb
   vars:
-   NAME: swamy
+   NAME: swamy-play
   vars_files:
    varibles44.yaml
   vars_prompt:
-  - name: NAME
+  - name: NAME-prompt
     prompt: please enter trainer
     private: false
   tasks:
   - name: print the varibles
   vars:
-   NAME: swamy
-  tasks:
+   NAME: swamy-task
   - name: testing the precedence varibles
     ansible.builtin.debug:
      msg: "what is trainer name {{NAME}}"
