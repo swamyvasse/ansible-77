@@ -1,0 +1,13 @@
+- name: printed varibles in prompt level
+  hosts: mongodb
+  vars_prompt:
+  - name: USERNAME
+    prompt: please enter username
+    private: false
+  - name: PASSWORD
+    prompt: please enter password
+    private: true
+  tasks:
+  - name: printed varibles in prompt
+    ansible.builtin.debug:
+     msg: "username {{USERNAME}} password {{PASSWORD}}"
