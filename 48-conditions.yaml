@@ -1,0 +1,9 @@
+- name: testing user is exist or not
+  hosts: mongodb
+tasks:
+- name: user is exist or not
+  ansible.builtin.command: id roboshop
+  register: output
+- name: checking user is exist or not
+  ansible.builtin.debug:
+   msg: "user is {{output}}"
