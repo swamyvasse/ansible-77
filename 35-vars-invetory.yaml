@@ -1,0 +1,6 @@
+- name: printed varibles from inventory
+  hosts: mongodb
+  tasks:
+   - name: printed varibles from inventory
+     ansible.builtin.debug:
+      msg: "i am learning course is {{COURSE}} and tariner is {{TRAINER}}"
