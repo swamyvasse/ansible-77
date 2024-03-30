@@ -12,5 +12,4 @@
   - name: print the varibles
   vars:
    NAME: swamy-task
-  ansible.builtin.debug:
    msg: "what is trainer name {{NAME}}"
