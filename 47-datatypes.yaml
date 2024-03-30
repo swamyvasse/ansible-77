@@ -1,0 +1,32 @@
+- name: testing the different data types
+  hosts: mongodb
+  vars:
+   AGE: 30
+   NAME: "swamy"
+   ISDEVOPS: true
+  - SKILLS:
+     devops
+     aws
+     linux
+     docker
+  - EXPERIENCE:
+     devops: 3
+     aws: 5
+     docker: 7
+  tasks:
+  - name: print the datatypes
+    ansible.builtin.debug:
+     msg: "print number {{AGE}}"
+  - name: print the datatypes
+    ansible.builtin.debug:
+     msg: "print string {{NAME}}"
+  - name: print the datatypes
+    ansible.builtin.debug:
+     msg: "print bullen {{ISDEVOPS}}"
+  - name: print the datatypes
+    ansible.builtin.debug:
+     msg: "print list {{SKILLS}}"
+  - name: print the datatypes
+    ansible.builtin.debug:
+     msg: "print map {{EXPERIENCE}}"
+  
