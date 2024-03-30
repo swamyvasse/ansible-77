@@ -2,5 +2,5 @@
 roboshop-us-dev-db-mongodb01.swamy.cloud
 
 [mongodb:vars]
-COURSE: devops
-TRAINER: swamy
+COURSE=devops
+TRAINER=swamy
