@@ -3,7 +3,7 @@
   vars:
    NAME: swamy-play
   vars_files:
-   varibles44.yaml
+  - varibles44.yaml
   vars_prompt:
   - name: NAME-prompt
     prompt: please enter trainer
